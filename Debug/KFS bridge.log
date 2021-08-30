@@ -1,0 +1,56 @@
+﻿  GPT.cpp
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(155,1): warning C4099: 'FileSystem::File' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(149): message : voir la déclaration de 'FileSystem::File'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(160,1): warning C4099: 'FileSystem::Folder' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(157): message : voir la déclaration de 'FileSystem::Folder'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(95,27): warning C4018: '<' : incompatibilité signed/unsigned
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(180,27): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(201,70): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(204,119): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(236,71): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\GPT.cpp(239,120): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+  KFS bridge.cpp
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(155,1): warning C4099: 'FileSystem::File' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(149): message : voir la déclaration de 'FileSystem::File'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(160,1): warning C4099: 'FileSystem::Folder' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(157): message : voir la déclaration de 'FileSystem::Folder'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\KFS bridge.cpp(49,45): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\KFS bridge.cpp(94,22): warning C4018: '>=' : incompatibilité signed/unsigned
+  kfs.cpp
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(155,1): warning C4099: 'FileSystem::File' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(149): message : voir la déclaration de 'FileSystem::File'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(160,1): warning C4099: 'FileSystem::Folder' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(157): message : voir la déclaration de 'FileSystem::Folder'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): warning C4477: 'printf' : la chaîne de format '%x' nécessite un argument de type 'unsigned int', mais l'argument variadique 1 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): message : utilisez '%llx' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): message : utilisez '%I64x' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): warning C4477: 'printf' : la chaîne de format '%x' nécessite un argument de type 'unsigned int', mais l'argument variadique 2 est de type '__int64'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): message : utilisez '%llx' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(13,16): message : utilisez '%I64x' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(32,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(33,52): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(94,52): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(111,53): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(187,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): warning C4477: 'printf' : la chaîne de format '%u' nécessite un argument de type 'unsigned int', mais l'argument variadique 2 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): message : utilisez '%llu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): message : utilisez '%I64u' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): warning C4477: 'printf' : la chaîne de format '%u' nécessite un argument de type 'unsigned int', mais l'argument variadique 3 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): message : utilisez '%llu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(225,24): message : utilisez '%I64u' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(251,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(291,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(393,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(442,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(548,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(613,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(621,48): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(629,53): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(680,115): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(689,96): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(711,53): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(808,116): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(817,96): warning C4244: 'argument' : conversion de 'uint64_t' en 'size_t', perte possible de données
+  Génération de code en cours...
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(707): warning C4715: 'FileSystem::File::Read' : les chemins de contrôle ne retournent pas tous une valeur
+  KFS bridge.vcxproj -> D:\Data\users\Konect\1Documents\programmation\KFS bridge\Debug\KFS bridge.exe

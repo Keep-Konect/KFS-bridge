@@ -1,0 +1,19 @@
+﻿  kfs.cpp
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(155,1): warning C4099: 'FileSystem::File' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(149): message : voir la déclaration de 'FileSystem::File'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(160,1): warning C4099: 'FileSystem::Folder' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.h(157): message : voir la déclaration de 'FileSystem::Folder'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(33,20): warning C4477: 'printf' : la chaîne de format '%x' nécessite un argument de type 'unsigned int', mais l'argument variadique 1 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(33,20): message : utilisez '%llx' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(33,20): message : utilisez '%Ix' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(33,20): message : utilisez '%I64x' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): warning C4477: 'printf' : la chaîne de format '%u' nécessite un argument de type 'unsigned int', mais l'argument variadique 2 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%llu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%Iu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%I64u' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): warning C4477: 'printf' : la chaîne de format '%u' nécessite un argument de type 'unsigned int', mais l'argument variadique 3 est de type 'uint64_t'
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%llu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%Iu' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(223,24): message : utilisez '%I64u' dans la chaîne de format
+D:\Data\users\Konect\1Documents\programmation\KFS bridge\kfs.cpp(705): warning C4715: 'FileSystem::File::Read' : les chemins de contrôle ne retournent pas tous une valeur
+  KFS bridge.vcxproj -> D:\Data\users\Konect\1Documents\programmation\KFS bridge\x64\Debug\KFS bridge.exe
