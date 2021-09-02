@@ -880,8 +880,6 @@ namespace FileSystem {
                 WriteCluster = fileInfo->NextCluster;
             }
 
-            printf("Write into %u\n", WriteCluster);
-
             bytesWrite += bytesToWrite;
         }
 
