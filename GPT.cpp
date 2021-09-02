@@ -182,7 +182,7 @@ namespace GPT {
         uint64_t sizeToRead = 0;
         uint64_t sectorsToRead = 0;
         uint64_t sectorsRead = 0;
-        std::ifstream infile(filePath);
+        std::ifstream infile(filePath, std::ios::binary | std::ios::out);
 
         for (int i = 0; i < Divide(size, 0x1000); i++) {
             sizeToRead = size - sizeRead;
@@ -215,7 +215,7 @@ namespace GPT {
         uint64_t sizeToWrite = 0;
         uint64_t sectorsToWrite = 0;
         uint64_t sectorsWrite = 0;
-        std::fstream file(filePath);
+        std::fstream file(filePath, std::ios::binary | std::ios::out | std::ios::in);
         for (int i = 0; i < Divide(size, 0x1000); i++) {
             sizeToWrite = size - sizeWrite;
             if (sizeToWrite > 0x1000) {
@@ -223,11 +223,11 @@ namespace GPT {
             }
 
             sectorsToWrite = Divide(sizeToWrite, SizeofLBASector);
-
-            file.seekg((LBAFirstSector + sectorsToWrite) * SizeofLBASector);
+            
+            file.seekg((LBAFirstSector + sectorsWrite) * SizeofLBASector);
             file.read(Buffer, sectorsToWrite * SizeofLBASector);
             file.seekg(0);
- 
+
             if (sizeWrite != 0) {
                 memcpy(Buffer, (void*)((uint64_t)buffer + sizeWrite), sizeToWrite);
             }
@@ -238,7 +238,8 @@ namespace GPT {
             file.seekp((LBAFirstSector + sectorsWrite) * SizeofLBASector);
             file.write(Buffer, sectorsToWrite * SizeofLBASector);
             file.seekp(0);
-            sizeWrite += sectorsToWrite;
+
+            sizeWrite += sizeToWrite;
             sectorsWrite += sectorsToWrite;
         }
         file.close();

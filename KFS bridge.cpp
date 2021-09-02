@@ -13,19 +13,19 @@ int main()
     filePath = (char*)"D:\\Data\\users\\Konect\\1Documents\\programmation\\Kot\\Data\\debugDisk.vhd";
     GPT::Partition dataPartition = GPT::Partition(GPT::GetPartitionByGUID(GPT::GetDataGUIDPartitionType()));
     FileSystem::KFS* Fs = new FileSystem::KFS(&dataPartition); 
-    Fs->mkdir((char*)"system", 777);
-    Fs->mkdir((char*)"system/background", 777);
+    Fs->flist((char*)"system/background");
+
     FileSystem::File* Picture = Fs->fopen((char*)"system/background/1.bmp", (char*)"r");
     char* filename = (char*)"D:\\Data\\users\\Konect\\1Documents\\programmation\\Kot\\Data\\1.bmp";
-    std::ifstream PictureWindows(filename, std::ifstream::ate | std::ifstream::binary);
-    uint64_t pictureSize = PictureWindows.tellg();
-    void* bufferPicture = malloc(pictureSize);
-    PictureWindows.read((char*)bufferPicture, pictureSize);
-    PictureWindows.close();
-    printf("%x", bufferPicture);
+    FILE* f = fopen(filename, "r");
+    fseek(f, 0, SEEK_END);
+    size_t pictureSize = ftell(f);
+    rewind(f);
+    char* bufferPicture = (char*)malloc(sizeof(char) * pictureSize);
+    fread(bufferPicture, 1, pictureSize, f);
     Picture->Write(0, pictureSize, bufferPicture);
-    Fs->flist((char*)"system/background");
-    printf("%x", Picture->fileInfo->BytesSize);
+    fclose(f);
+
 }
 
 bool Bitmap::operator[](uint64_t index) {
